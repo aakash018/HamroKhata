@@ -22,7 +22,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
 
 // DataBase Connect
-mongoose.connect("mongodb://localhost/HamroKhata", {
+mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
