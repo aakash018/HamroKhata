@@ -1,14 +1,16 @@
 const express = require("express");
-const Entry = require("../models/entry");
+const Entries = require("../models/entry");
 const router = express();
 
 router.get("/", async (req, res) => {
-  const entries = await Entry.find({});
+  const entries = await Entries.find({});
   try {
     res.render("infoTable/infoTable", {
       entries: entries,
     });
-  } catch { }
+  } catch {
+    res.redirect("/infoTable")
+  }
 });
 
 module.exports = router;

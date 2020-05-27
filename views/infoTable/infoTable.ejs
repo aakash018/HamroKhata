@@ -1,27 +1,27 @@
 <h2>Info Table</h2>
 <div class="parentTable" style="display: flex; margin-left: 1vw;">
   <hr>
-  <div class="headerColumn">
+  <div class="Column">
     <h3>Amount</h3>
-    <div class="column1">
+    <div class="column_data">
       <% entries.forEach(entry => { %>
       <div><%= entry.amount %></div>
       <%}) %>
     </div>
   </div>
   <hr>
-  <div class="headerColumn">
+  <div class="Column">
     <h3>Paid By</h3>
-    <div class="column1">
+    <div class="column_data">
       <% entries.forEach(entry => { %>
       <div><%= entry.person %></div>
       <%}) %>
     </div>
   </div>
   <hr>
-  <div class="headerColumn">
+  <div class="Column">
     <h3>Date</h3>
-    <div class="column1">
+    <div class="column_data">
       <% entries.forEach(entry => { %>
       <div><%= entry.currentTime.toISOString().split("T")[0] %></div>
       <%}) %>
@@ -30,7 +30,7 @@
   <hr>
   <div class="headerColumn">
     <h3>Remarks</h3>
-    <div class="column1">
+    <div class="column_data">
       <% entries.forEach(entry => { %>
       <div><%= entry.reason %></div>
       <%}) %>

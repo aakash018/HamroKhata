@@ -1,0 +1,45 @@
+<h2>Audit</h2>
+<div class="parentTable" style="display: flex; margin-left: 1vw;">
+    <hr>
+    <div class="Column">
+        <h3>Aakash</h3>
+        <div class="column_data">
+            <% entries.forEach(entry => { %>
+            <div><% if (entry.person == "Aakash") { %>
+                <%= entry.amount %>
+                <% } %>
+            </div>
+            <%}) %>
+        </div>
+        <div>
+            Subash_Aakash =
+            <%= audites[audites.length - 1].Subash_Aakash %>
+        </div>
+    </div>
+    <hr>
+    <div class="Column">
+        <h3>Subash</h3>
+        <div class="column_data">
+            <% entries.forEach(entry => { %>
+            <div><% if (entry.person == "Subash") { %>
+                <%= entry.amount %>
+                <% } %>
+            </div>
+            <%}) %>
+            <div></div>
+        </div>
+    </div>
+    <hr>
+    <div class="Column">
+        <h3>Yaman</h3>
+        <div class="column_data">
+            <% entries.forEach(entry => { %>
+            <div><% if (entry.person == "Yaman") { %>
+                <%= entry.amount %>
+                <% } %>
+            </div>
+            <%}) %>
+        </div>
+    </div>
+    <hr>
+</div>
