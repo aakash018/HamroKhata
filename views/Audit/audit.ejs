@@ -1,5 +1,5 @@
 <h2>Audit</h2>
-<div class="parentTable" style="display: flex; margin-left: 1vw;">
+<div class="parentTable" style="display: flex;">
     <hr>
     <div class="Column">
         <h3>Aakash</h3>
@@ -12,11 +12,11 @@
             <%}) %>
         </div>
         <div>
-            Subash_Aakash =
+            Subash=
             <%= audites[audites.length - 1].Subash_Aakash %>
         </div>
         <div>
-            Yaman_Aakash =
+            Yaman =
             <%= audites[audites.length - 1].Yaman_Aakash %>
         </div>
     </div>
@@ -30,7 +30,14 @@
                 <% } %>
             </div>
             <%}) %>
-            <div></div>
+            <div>
+                Aakash =
+                <%= audites[audites.length - 1].Aakash_Subash %>
+            </div>
+            <div>
+                Yaman =
+                <%= audites[audites.length - 1].Yaman_Subash %>
+            </div>
         </div>
     </div>
     <hr>
@@ -43,7 +50,17 @@
                 <% } %>
             </div>
             <%}) %>
+            <div>
+                Aakash =
+                <%= audites[audites.length - 1].Aakash_Yaman %>
+                </>
+                <div>
+                    Subash =
+                    <%= audites[audites.length - 1].Subash_Yaman %>
+                </div>
+            </div>
         </div>
     </div>
     <hr>
+</div>
 </div>
