@@ -38,3 +38,16 @@
   </div>
   <hr>
 </div>
+
+<div id="total_counter">
+  <div>
+    Total
+    <div class="counter">
+      <% let s = 0 %>
+      <% entries.forEach(entry => { %>
+      <% s = s + entry.amount %>
+      <% }); %>
+      <%= s %>
+    </div>
+  </div>
+</div>
