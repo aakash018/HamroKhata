@@ -1,0 +1,8 @@
+.parentTable{
+    display: flex;
+    font-size: var(--font-size);
+    font-family: var(--text-font);
+    margin-top: 20rem;
+    justify-content: space-between;
+    
+}

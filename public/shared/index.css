@@ -24,13 +24,13 @@
 }
 
 .entry_form input[type="number"]{
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3.5rem;
     transition: color 1s ease-in-out;
     font-family: var(--text-font);
 }
 
 .entry_form textarea{
-    padding: 2.5rem 3.1rem;
+    padding: 2.5rem 3.4rem;
     resize: none;
     font-family: var(--text-font);
 }

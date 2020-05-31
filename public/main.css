@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Ubuntu&display=swap');
 @import url('./shared/index.css');
 @import url('./shared/infoTable.css');
+@import url('./shared/audit.css');
 
 
 
@@ -20,7 +21,7 @@ body{
     --header-title-color: rgb(246, 69, 105);
     --header-color: rgb(227, 233, 245);
     --transperent-background: rgba(47, 45, 45, 0.966);
-    --text-font: 'Ubuntu', sans-serif;
+    --text-font: 'Raleway', sans-serif;
     --font-size: 1.7rem;
     
 
@@ -29,7 +30,7 @@ body{
 header nav{
     position: fixed;
     top: 0%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     background-color: var(--header-background-color);
@@ -43,7 +44,7 @@ header nav{
 .error{
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 35%;
     left: 43%;
     transform: translate(-50%,-50%);
     font-weight: bolder;
@@ -79,6 +80,8 @@ nav ul li a:hover{
 .burger{
     position: relative;
     display: none;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
 }
 
 .burger div{
@@ -111,7 +114,7 @@ footer div{
         position: absolute;
         left: 0;
         height: 70vh;
-        z-index: 2;
+        z-index: 3;
         background-color: var(--transperent-background);
         top: var(--header-height);
         flex-direction: column;
@@ -127,6 +130,10 @@ footer div{
 
     .burger{
         display: block;
+    }
+
+    .error{
+        left: 25%;
     }
 
     header nav .nav-header{
@@ -153,12 +160,28 @@ footer div{
     }
 }
 
+@media screen and (max-width: 420px){
+    .error{
+        top: 31%;
+        left: 28%;
+    }
+}
+
+@media screen and (min-height: 1024px){
+    .error{
+        top: 33%;
+        left: 38%;
+        font-size: 3.5rem;
+    }
+}
 
 .nav-active {
     transform: translateX(0%);
   }
   
-
+.burger-active {
+    transform: translateY(5px);
+}
 
 .burger .line1_active{
     transform: rotate(45deg);

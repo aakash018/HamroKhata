@@ -1,10 +1,17 @@
 .page-header{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.5rem;
     padding: 3rem;
     text-align: center;
+    color: var(--header-title-color);
+    font-family: var(--header-font);
+    /* text-shadow: 2px 0px 1px black; */
 }
 
-.parentTable{
+.parentTable_Info{
     display: flex;
     font-size: var(--font-size);
     font-family: var(--text-font);
@@ -26,8 +33,7 @@
 }
 
 .search{
-    margin: 4rem;
-    margin-left: 12rem;
+    margin: 17rem 0 5rem 8rem;
 }
 
 .search form input{
@@ -35,6 +41,7 @@
 }
 
 .search form button{
+    font-family: var(--text-font);
     margin-left: 1rem;
     padding: 0.5rem 2rem;
     cursor: pointer;
@@ -55,4 +62,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .page-header{
+        font-size: 2rem;
+        top: 14%;
+    }
+
+    .search{
+        margin-left: 1rem;
+    }
+ 
 }
