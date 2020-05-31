@@ -8,7 +8,6 @@ router.get("/", (req, res) => {
   res.render("index");
 });
 router.post("/", async (req, res) => {
-  calculation(req.body.amount, req.body.person)
   const entry = await new Entry({
     amount: req.body.amount,
     person: req.body.person,
@@ -16,6 +15,7 @@ router.post("/", async (req, res) => {
   });
   try {
     const newEntry = await entry.save();
+    calculation(req.body.amount, req.body.person)
     res.redirect("/infoTable");
   } catch {
     res.render("index", {

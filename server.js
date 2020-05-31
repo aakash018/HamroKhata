@@ -23,6 +23,7 @@ app.use(expressLayout);
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
 app.use(methodOverride("_method"))
+app.use("/public", express.static('./public/'));
 
 // DataBase Connect
 mongoose.connect(process.env.DATABASE_URL, {

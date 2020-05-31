@@ -1,6 +1,11 @@
-<h2>Info Table</h2>
-<div class="parentTable" style="display: flex; margin-left: 1vw;">
-  <hr>
+<h2 class="page-header">Info Table</h2>
+<div class="search">
+  <form action="/infoTable" method="GET">
+    <input type="text" placeholder="Search By Name" name="person" value="<%= searchOption.person %>">
+    <button type="submit">Search</button>
+  </form>
+</div>
+<div class="parentTable">
   <div class="Column">
     <h3>Amount</h3>
     <div class="column_data">
@@ -28,7 +33,7 @@
     </div>
   </div>
   <hr>
-  <div class="headerColumn">
+  <div class="Column">
     <h3>Remarks</h3>
     <div class="column_data">
       <% entries.forEach(entry => { %>
@@ -36,7 +41,6 @@
       <%}) %>
     </div>
   </div>
-  <hr>
 </div>
 
 <div id="total_counter">
@@ -44,7 +48,7 @@
     Total
     <div class="counter">
       <% let s = 0 %>
-      <% entries.forEach(entry => { %>
+      <% entries_for_total.forEach(entry => { %>
       <% s = s + entry.amount %>
       <% }); %>
       <%= s %>

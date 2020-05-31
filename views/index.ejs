@@ -1,20 +1,23 @@
-<form action="/" method="POST">
-  <div>
-    <label>Amount</label>
-    <input type="number" min="1" name="amount" <% if (locals.entry != null) { %> value="<%= entry.amount %>" <% } %> />
-  </div>
-  <div>
-    <label>Paid By:</label>
-    <select name="person">
-      <option selected label="Aakash" value="Aakash"></option>
-      <option label="Subash" value="Subash"></option>
-      <option label="Yaman" value="Yaman"></option>
-    </select>
-  </div>
-  <div>
-    <label>Remark</label>
-    <br />
-    <textarea name="reason" cols="30" rows="1" maxlength="15"></textarea>
-  </div>
-  <button type="submit">Submit</button>
-</form>
+<div id="entry_main">
+  <form action="/" method="POST">
+    <div class="entry_form">
+      <label>Amount</label>
+      <input type="number" min="1" name="amount" <% if (locals.entry != null) { %> value="<%= entry.amount %>"
+        <% } %> />
+    </div>
+    <div class="entry_form">
+      <label>Paid By</label>
+      <select name="person">
+        <option selected label="Aakash" value="Aakash"></option>
+        <option label="Subash" value="Subash"></option>
+        <option label="Yaman" value="Yaman"></option>
+      </select>
+    </div>
+    <div class="entry_form">
+      <label>Remark</label>
+      <br />
+      <textarea name="reason" cols="30" rows="1" maxlength="15"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
