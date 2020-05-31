@@ -87,9 +87,9 @@
     }
 }
 
-@media screen and (min-height: 600px){
+@media screen and (min-height: 600px) and (max-height: 900px){
     #entry_main{
-        transform: scale(0.95) translateY(30%);
+        transform: scale(0.95) translateY(28%);
         margin-top: 10vh;
     }
 }
