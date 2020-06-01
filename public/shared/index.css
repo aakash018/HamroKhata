@@ -25,6 +25,7 @@
 
 .entry_form input[type="number"]{
     padding: 0.5rem 3.5rem;
+    margin-left: 0.4rem;
     transition: color 1s ease-in-out;
     font-family: var(--text-font);
 }
@@ -47,7 +48,7 @@
 .entry_form input[type="number"]:focus,
 .entry_form textarea:focus,
 .entry_form select:focus{
-    background-color: rgb(225, 231, 241);
+    background-color: var(--input-focus-color);
     border: none;
     outline: none;
 }
@@ -62,13 +63,14 @@
     border: none;
     border-radius: 5rem;
     font-weight: bolder;
-    background-color: var(--header-title-color);
+    background-color: rgba(var(--header-title-color), 0.8);
     color: white;
     letter-spacing: 0.1rem;
 }
 
 #entry_main button:hover{
-    background-color: rgb(238, 38, 78);
+    background-color: rgb(var(--header-title-color));
+    box-shadow: 0px 0px 25px rgba(var(--header-title-color), 0.7);
     cursor: pointer;
     text-shadow: 3px 3px 3px black;
 }

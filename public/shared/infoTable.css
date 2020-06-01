@@ -6,7 +6,7 @@
     font-size: 2.5rem;
     padding: 3rem;
     text-align: center;
-    color: var(--header-title-color);
+    color: rgb(var(--header-title-color));
     font-family: var(--header-font);
     /* text-shadow: 2px 0px 1px black; */
 }
@@ -37,8 +37,15 @@
 }
 
 .search form input{
+    outline: none;
+    font-family: var(--text-font);
     height: 3rem;
 }
+
+.search form input:focus{
+    background-color: var(--input-focus-color);
+}
+
 
 .search form button{
     font-family: var(--text-font);

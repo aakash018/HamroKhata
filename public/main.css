@@ -18,9 +18,10 @@ body{
     --header-background-color: rgb(47, 45, 45);
     --header-font: 'Poppins', sans-serif;
     --header-height: 6rem;
-    --header-title-color: rgb(246, 69, 105);
+    --header-title-color: 246, 69, 105;
     --header-color: rgb(227, 233, 245);
     --transperent-background: rgba(47, 45, 45, 0.966);
+    --input-focus-color: rgb(225, 231, 241);
     --text-font: 'Raleway', sans-serif;
     --font-size: 1.7rem;
     
@@ -49,7 +50,7 @@ header nav{
     transform: translate(-50%,-50%);
     font-weight: bolder;
     font-size: var(--font-size);
-    color: var(--header-title-color);
+    color: rgb(var(--header-title-color));
 }
 
 nav ul{
@@ -62,7 +63,7 @@ nav ul{
 header nav .nav-header {
     font-family: var(--header-font);
     font-size: 2rem;
-    color: var(--header-title-color);
+    color: rgb(var(--header-title-color));
     letter-spacing: 0.3rem;
 }
 
@@ -160,11 +161,26 @@ footer div{
     }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 350px){
+
+    header nav .nav-header{
+        margin-left: 2rem;
+    }
+
+    .burger {
+        margin-left: 2rem;
+    }
+
     .error{
         top: 31%;
         left: 28%;
     }
+
+    footer div{
+        position: relative;
+    }
+
+
 }
 
 @media screen and (min-height: 900px){
@@ -189,11 +205,11 @@ footer div{
 
 .burger .line1_active{
     transform: rotate(45deg);
-    background-color: var(--header-title-color);
+    background-color: rgb(var(--header-title-color));
 }
 .burger .line3_active{
     transform: translateY(-14px) rotate(-45deg);
-    background-color: var(--header-title-color);
+    background-color: rgb(var(--header-title-color));
 }
 .burger .line2_active{
     opacity: 0;
