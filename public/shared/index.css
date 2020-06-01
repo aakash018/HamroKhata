@@ -30,7 +30,9 @@
 }
 
 .entry_form textarea{
-    padding: 2.5rem 3.4rem;
+    /* padding: 2.5rem 3.4rem; */
+    padding: 2.5rem 0 2.5rem 0;
+    width: 100%;
     resize: none;
     font-family: var(--text-font);
 }
@@ -78,6 +80,22 @@
         margin: auto;
         margin-top: 15%;
     }
+
+    .entry_form input[type="number"]{
+        padding: 0.5rem 3.8rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #entry_main{
+        transform: scale(0.75) translate(-7%, 10%);
+    }
+
+    .entry_form input[type="number"]{
+        padding-right: 3.55rem;
+    }
+
+    
 }
 
 @media screen and (min-height: 1024px){

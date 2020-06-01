@@ -65,6 +65,15 @@
 }
 
 
+@media screen and (max-width: 350px){
+    #total_counter{
+        right: -5%;
+        transform: scale(0.7);
+    }
+        
+    }
+
+
 @media screen and (max-width: 500px){
     .page-header{
         font-size: 2rem;
@@ -75,4 +84,22 @@
         margin-left: 1rem;
     }
  
+}
+
+
+@media screen and (max-width: 400px){
+    .Column{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (min-height: 900px){
+    .page-header{
+        top: 9%;
+    }
+
+    #total_counter{
+        bottom: 45%;
+    }
 }

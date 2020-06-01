@@ -141,7 +141,7 @@ footer div{
     }
 
     footer div{
-        position: static;
+        position: absolute;
         bottom: 0;
     }
 
@@ -167,13 +167,17 @@ footer div{
     }
 }
 
-@media screen and (min-height: 1024px){
+@media screen and (min-height: 900px){
     .error{
         top: 33%;
         left: 38%;
         font-size: 3.5rem;
     }
+    footer div{
+        margin-top: 20rem;
+    }
 }
+
 
 .nav-active {
     transform: translateX(0%);
