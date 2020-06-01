@@ -44,6 +44,7 @@
 
 .search form input:focus{
     background-color: var(--input-focus-color);
+    border-color: rgb(var(--header-title-color));
 }
 
 
