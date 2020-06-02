@@ -72,6 +72,9 @@
     border-radius: 2rem;
 }
 
+#total_counter p{
+    font-size: 1.2rem;
+}
 
 @media screen and (max-width: 350px){
     #total_counter{

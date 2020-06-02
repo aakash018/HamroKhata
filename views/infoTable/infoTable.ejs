@@ -45,11 +45,15 @@
 
 <div id="total_counter">
   <div>
-    Total
+    <p>Spend This Month</p>
     <div class="counter">
       <% let s = 0 %>
       <% entries_for_total.forEach(entry => { %>
+      <% var x = ((entry.currentTime).toISOString().split('-')[1]) %>
+      <% var m = new Date().getMonth() + 1  %>
+      <% if (x == m) { %>
       <% s = s + entry.amount %>
+      <% }; %>
       <% }); %>
       <%= s %>
     </div>
