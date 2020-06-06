@@ -3,9 +3,12 @@
     <div class="Column">
         <h3>Aakash</h3>
         <div class="column_data">
+            <% let i = 0 %>
             <% entries.forEach(entry => { %>
-            <div><% if (entry.person == "Aakash") { %>
+            <div><% if (entry.person == "Aakash" && i < 10) { %>
+                <% i += 1 %>
                 <%= entry.amount %>
+                <% console.log(i); %>
                 <% } %>
             </div>
             <%}) %>
@@ -25,8 +28,10 @@
     <div class="Column">
         <h3>Subash</h3>
         <div class="column_data">
+            <% let j = 0 %>
             <% entries.forEach(entry => { %>
-            <div><% if (entry.person == "Subash") { %>
+            <div><% if (entry.person == "Subash" && j < 10) { %>
+                <% j += 1 %>
                 <%= entry.amount %>
                 <% } %>
             </div>
@@ -47,8 +52,10 @@
     <div class="Column">
         <h3>Yaman</h3>
         <div class="column_data">
+            <% let k = 0 %>
             <% entries.forEach(entry => { %>
-            <div><% if (entry.person == "Yaman") { %>
+            <div><% if (entry.person == "Yaman" && k < 10 )  { %>
+                <% k += 1 %>
                 <%= entry.amount %>
                 <% } %>
             </div>

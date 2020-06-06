@@ -98,9 +98,9 @@
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     .Column{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 

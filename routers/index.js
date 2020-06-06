@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
   try {
     const newEntry = await entry.save();
     calculation(req.body.amount, req.body.person)
-    res.redirect("/infoTable");
+    res.redirect("/audit");
   } catch {
     res.render("index", {
       entry: entry,
