@@ -1,8 +1,9 @@
 <div id="entry_main">
+
   <form action="/" method="POST">
     <div class="entry_form">
       <label>Amount</label>
-      <input type="number" min="1" name="amount" <% if (locals.entry != null) { %> value="<%= entry.amount %>"
+      <input type="number" min="1" name="amount" required <% if (locals.entry != null) { %> value="<%= entry.amount %>"
         <% } %> />
     </div>
     <div class="entry_form">
@@ -16,7 +17,7 @@
     <div class="entry_form">
       <label>Remark</label>
       <br />
-      <textarea name="reason" cols="30" rows="1" maxlength="15"></textarea>
+      <textarea name="reason" cols="30" rows="1" maxlength="15" required></textarea>
     </div>
     <button type="submit">Submit</button>
   </form>

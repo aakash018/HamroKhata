@@ -1,8 +1,9 @@
 const express = require("express");
 const Entries = require("../models/entry");
 const router = express();
+const ensureAuthenticated = require("./login/auth_config")
 
-router.get("/", async (req, res) => {
+router.get("/", ensureAuthenticated, async (req, res) => {
   let searchOption = {};
   if (req.query.person != null && req.query.person != '') {
     searchOption.person = new RegExp(req.query.person, 'i')

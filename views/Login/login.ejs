@@ -1,0 +1,20 @@
+<h2>Login</h2>
+
+<h3>Enter Password</h3>
+<% if (messages.error) { %>
+<% console.log(typeof(messages.error)) %>
+<%= messages.error %>
+<% } %>
+<div id="entry_main">
+    <form action="/login" method="POST">
+        <div class="entry_form" style="display: none;">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" value="admin">
+        </div>
+        <div class="entry_form">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>

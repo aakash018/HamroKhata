@@ -1,0 +1,15 @@
+#logout{
+    position: absolute;
+    top: 15%;
+    right: 2%;
+}
+
+#logout button{
+    background-color: rgb(var(--header-title-color));
+    font-family: var(--text-font);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: white;
+}

@@ -23,7 +23,7 @@
     margin-bottom: 1rem;
 }
 
-.entry_form input[type="number"]{
+.entry_form input{
     padding: 0.5rem 3.5rem;
     margin-left: 0.4rem;
     transition: color 1s ease-in-out;
@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-.entry_form input[type="number"]:focus,
+.entry_form input:focus,
 .entry_form textarea:focus,
 .entry_form select:focus{
     background-color: var(--input-focus-color);

@@ -2,9 +2,10 @@ const express = require("express");
 const router = express();
 const Entry = require("../models/entry");
 const Audits = require("../models/audit")
+const ensureAuthenticated = require("./login/auth_config")
 
 
-router.get("/", (req, res) => {
+router.get("/", ensureAuthenticated, (req, res) => {
   res.render("index");
 });
 router.post("/", async (req, res) => {

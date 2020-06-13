@@ -2,6 +2,7 @@
 @import url('./shared/index.css');
 @import url('./shared/infoTable.css');
 @import url('./shared/audit.css');
+@import url('./shared/manage.css');
 
 
 
@@ -45,8 +46,8 @@ header nav{
 .error{
     position: absolute;
     z-index: 1;
-    top: 35%;
-    left: 43%;
+    top: 25%;
+    left: 33%;
     transform: translate(-50%,-50%);
     font-weight: bolder;
     font-size: var(--font-size);

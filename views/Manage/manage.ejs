@@ -1,0 +1,24 @@
+<h2 class="page-header">Manage</h2>
+
+
+<div id="entry_main">
+    <div class="error">
+        <%-include("../partials/errorMessage") %>
+    </div>
+    <form action="/manage" method="POST">
+        <div class="entry_form">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="entry_form">
+            <label for="confirm_password">Confirm</label>
+            <input type="password" name="confirm_password" id="confirm_password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</div>
+<div id="logout">
+    <form action="/manage?_method=DELETE" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+</div>
