@@ -6,10 +6,35 @@
 
 #logout button{
     background-color: rgb(var(--header-title-color));
+    outline: none;
     font-family: var(--text-font);
     border: none;
     border-radius: 2rem;
     padding: 1rem 2rem;
     cursor: pointer;
     color: white;
+}
+
+
+ .entry_form_header{
+    position: absolute;
+    top: 8%;
+    font-family: var(--text-font);
+    font-size: var(--font-size);
+    font-weight: 100;
+    color: rgb(var(--header-title-color));
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#confirm_password{
+    margin-left: 1.8rem;
+}
+
+#old_password{
+    margin-left: 1.6rem;
+}
+
+#password{
+    margin-left: 4.5rem;
 }

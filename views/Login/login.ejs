@@ -1,20 +1,43 @@
-<h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<h3>Enter Password</h3>
-<% if (messages.error) { %>
-<% console.log(typeof(messages.error)) %>
-<%= messages.error %>
-<% } %>
-<div id="entry_main">
-    <form action="/login" method="POST">
-        <div class="entry_form" style="display: none;">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" value="admin">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | | HamroKhata</title>
+    <link rel="stylesheet" href="../../public/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="nav-header">HamroKhata</h2>
+        </nav>
+    </header>
+    <h2 class="login_header">Login</h2>
+    <div id="entry_main_login">
+        <div class="contex">
+            <h3 class="title">Enter The Password</h3>
+            <% if (messages.error) { %>
+            <% console.log(typeof(messages.error)) %>
+            <span class="error_login"><%= messages.error %></span>
+            <% } %>
+            <form action="/login" method="POST">
+                <div class="entry_form_login" style="display: none;">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" value="admin">
+                </div>
+                <div class="entry_form_login">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password_login">
+                </div>
+                <div class="entry_form_login">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <p>Developed By <span>Aakash Khanal</span></p>
         </div>
-        <div class="entry_form">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <button type="submit">Login</button>
-    </form>
-</div>
+    </div>
+</body>
+
+</html>

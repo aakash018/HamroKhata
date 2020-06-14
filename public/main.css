@@ -3,7 +3,7 @@
 @import url('./shared/infoTable.css');
 @import url('./shared/audit.css');
 @import url('./shared/manage.css');
-
+@import url('./login/style.css');
 
 
 *{
@@ -47,7 +47,8 @@ header nav{
     position: absolute;
     z-index: 1;
     top: 25%;
-    left: 33%;
+    left: 55%;
+    width: 100%;
     transform: translate(-50%,-50%);
     font-weight: bolder;
     font-size: var(--font-size);
@@ -147,6 +148,10 @@ footer div{
         bottom: 0;
     }
 
+    .error{
+        top: 24%;
+        left: 55%;
+    }
 }
 
 
@@ -162,7 +167,7 @@ footer div{
     }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 370px){
 
     header nav .nav-header{
         margin-left: 2rem;
@@ -173,8 +178,8 @@ footer div{
     }
 
     .error{
-        top: 31%;
-        left: 28%;
+        top: 24%;
+        left: 55%;
     }
 
     footer div{
@@ -186,9 +191,8 @@ footer div{
 
 @media screen and (min-height: 900px){
     .error{
-        top: 33%;
-        left: 38%;
-        font-size: 3.5rem;
+        top: 24%;
+        left: 55%;
     }
     footer div{
         margin-top: 20rem;

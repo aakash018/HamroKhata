@@ -60,6 +60,9 @@ app.use("/infoTable", infoTableRouter);
 app.use("/audit", auditRouter);
 app.use("/login", loginRouter)
 app.use("/manage", manageRouter)
+app.all("*", (req, res) => {
+  res.redirect("/")
+})
 
 
 

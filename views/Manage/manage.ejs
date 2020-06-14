@@ -6,8 +6,15 @@
         <%-include("../partials/errorMessage") %>
     </div>
     <form action="/manage" method="POST">
+        <div class="entry_form_header">
+            Creat New Password
+        </div>
         <div class="entry_form">
-            <label for="password">Password</label>
+            <label for="old_password">Previous</label>
+            <input type="password" name="old_password" id="old_password" required>
+        </div>
+        <div class="entry_form">
+            <label for="password">New</label>
             <input type="password" name="password" id="password" required>
         </div>
         <div class="entry_form">
