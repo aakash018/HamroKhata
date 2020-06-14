@@ -33,7 +33,7 @@ app.use("/public", express.static('./public/'));
 
 
 app.use(session({
-  secret: "cat",
+  secret: process.env.SESSION_SECREAT,
   resave: false,
   saveUninitialized: false
 }))
