@@ -5,7 +5,7 @@
 }
 
 #logout button{
-    background-color: rgb(var(--header-title-color));
+    background-color: rgba(var(--header-title-color),0.85);
     outline: none;
     font-family: var(--text-font);
     border: none;
@@ -15,6 +15,9 @@
     color: white;
 }
 
+#logout button:hover{
+    background-color: rgb(var(--header-title-color));
+}
 
  .entry_form_header{
     position: absolute;

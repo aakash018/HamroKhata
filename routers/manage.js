@@ -9,7 +9,7 @@ router.get("/", ensureAuthenticated, (req, res) => {
     res.render("Manage/manage")
 })
 
-router.post("/", async (req, res) => {
+router.post("/", ensureAuthenticated, async (req, res) => {
     const old_passwords = await Password.find()
     const last_password = await old_passwords[old_passwords.length - 1].password
     const hashPassword = await bcrypt.hash(req.body.password, 10)
@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
     }
 })
 
-router.delete("/", (req, res) => {
+router.delete("/", ensureAuthenticated, (req, res) => {
     req.logOut();
     res.redirect("/login")
 })

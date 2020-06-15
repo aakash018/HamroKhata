@@ -8,7 +8,7 @@ const ensureAuthenticated = require("./login/auth_config")
 router.get("/", ensureAuthenticated, (req, res) => {
   res.render("index");
 });
-router.post("/", async (req, res) => {
+router.post("/", ensureAuthenticated, async (req, res) => {
   const entry = await new Entry({
     amount: req.body.amount,
     person: req.body.person,

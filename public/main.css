@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Ubuntu&family=Oxygen&display=swap');
 @import url('./shared/index.css');
 @import url('./shared/infoTable.css');
 @import url('./shared/audit.css');
@@ -25,6 +25,7 @@ body{
     --input-focus-color: rgb(225, 231, 241);
     --text-font: 'Raleway', sans-serif;
     --font-size: 1.7rem;
+    --error-font: 'Oxygen', sans-serif;
     
 
 }
@@ -53,6 +54,7 @@ header nav{
     font-weight: bolder;
     font-size: var(--font-size);
     color: rgb(var(--header-title-color));
+    font-family: var(--error-font);
 }
 
 nav ul{
