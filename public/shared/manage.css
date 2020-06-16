@@ -41,3 +41,23 @@
 #password{
     margin-left: 4.5rem;
 }
+.show_password_icon_div{
+    position: relative;
+    transform: translateY(-3.5rem);
+    cursor: pointer;
+    margin-left: 27rem;
+}
+
+.show_password_icon{
+    position: absolute;
+}
+
+.show_password_icon .circle{
+    stroke: black;
+    fill: black
+}
+
+.show_password_icon .circle_active{
+    fill: rgb(var(--header-title-color));
+    stroke:rgb(var(--header-title-color));;
+}

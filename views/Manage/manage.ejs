@@ -12,14 +12,32 @@
         <div class="entry_form">
             <label for="old_password">Previous</label>
             <input type="password" name="old_password" id="old_password" required>
+            <div class="show_password_icon_div" onclick="showPassword_old_icon()">
+                <svg height="2.2rem" width="4rem" class="show_password_icon">
+                    <ellipse cx="20" cy="20" rx="12" ry="10" stroke="black" stroke-width="4" fill="white" />
+                    <circle cx="20" cy="19" r="3.2" class="circle_old" />
+                </svg>
+            </div>
         </div>
         <div class="entry_form">
             <label for="password">New</label>
             <input type="password" name="password" id="password" required>
+            <div class="show_password_icon_div" onclick="showPassword_new_icon()">
+                <svg height="2.2rem" width="4rem" class="show_password_icon">
+                    <ellipse cx="20" cy="20" rx="12" ry="10" stroke="black" stroke-width="4" fill="white" />
+                    <circle cx="20" cy="19" r="3.2" class="circle_new" />
+                </svg>
+            </div>
         </div>
         <div class="entry_form">
             <label for="confirm_password">Confirm</label>
             <input type="password" name="confirm_password" id="confirm_password" required>
+            <div class="show_password_icon_div" onclick="showPassword_confirm_icon()">
+                <svg height="2.2rem" width="4rem" class="show_password_icon">
+                    <ellipse cx="20" cy="20" rx="12" ry="10" stroke="black" stroke-width="4" fill="white" />
+                    <circle cx="20" cy="19" r="3.2" class="circle_confirm" />
+                </svg>
+            </div>
         </div>
         <button type="submit">Register</button>
     </form>

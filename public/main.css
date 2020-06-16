@@ -15,7 +15,7 @@
 html,
 body{
     font-size: 62.5%;
-    height: auto;
+    height: 100%;
     --header-background-color: rgb(47, 45, 45);
     --header-font: 'Poppins', sans-serif;
     --header-height: 6rem;
@@ -98,9 +98,15 @@ nav ul li a:hover{
     transition: all 0.7s ease-in-out;
 }
 
-footer div{
-    margin-top: 10rem;
+footer{
+    position: absolute;
     width: 100%;
+
+}
+
+footer div{
+    position: relative;
+    margin-top: 10rem;
     background-color: var(--header-background-color);
     height: 8rem;
     display: flex;
@@ -109,6 +115,7 @@ footer div{
     color: var(--header-color);
     font-size: 1.5rem;
     font-family: var(--header-font);
+    transform: translateY(190%);
 }
 
 @media screen and (max-width: 700px){
@@ -145,10 +152,9 @@ footer div{
         margin-right: 12rem;
     }
 
-    footer div{
-        position: absolute;
-        bottom: 0;
-    }
+    /* footer div{
+        transform: translateX();
+    }  */
 
     .error{
         top: 24%;
@@ -158,14 +164,16 @@ footer div{
 
 
 @media screen and (min-height: 1024px){
-    footer div{
-        transform: translateY(800%);
+    footer{
+        position: absolute;
+        bottom: 0;
     }
 }
 
-@media screen and (min-height: 600px) and (max-height: 900px){
-    footer div{
-        transform: translateY(190%);
+@media screen and (max-width: 450px){
+    footer{
+        width: 100%;
+        transform: translateY(50%);
     }
 }
 
@@ -184,8 +192,8 @@ footer div{
         left: 55%;
     }
 
-    footer div{
-        position: relative;
+    footer {
+        transform: translateY(-50%);
     }
 
 
@@ -195,9 +203,6 @@ footer div{
     .error{
         top: 24%;
         left: 55%;
-    }
-    footer div{
-        margin-top: 20rem;
     }
 }
 

@@ -17,7 +17,7 @@ body{
     transform: translate(-50%, -50%);
     height: 40rem;
     width: 36rem;
-    line-height: 5rem;
+    line-height: 4rem;
     font-size: 1.6rem;
     border: 2px solid var(--header-background-color);
     border-radius: 0.5rem;
@@ -78,6 +78,17 @@ body{
     outline: none;
 }
 
+.show_password input{
+    transform: scale(1.5);
+    cursor: pointer;
+    
+}
+
+.show_password label{
+    font-size: 1.4rem;
+    font-family: var(--error-font);
+    margin-left: 0.6rem;
+}
 
 #entry_main_login button{
     margin-left: 6.5rem;
