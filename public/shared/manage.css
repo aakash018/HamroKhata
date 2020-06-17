@@ -45,11 +45,15 @@
     position: relative;
     transform: translateY(-3.5rem);
     cursor: pointer;
-    margin-left: 27rem;
+    margin-left: 26.6rem;
 }
 
 .show_password_icon{
     position: absolute;
+}
+
+svg ellipse{
+    fill: rgba(0, 0, 0, 0);
 }
 
 .show_password_icon .circle{

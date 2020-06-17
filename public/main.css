@@ -125,7 +125,7 @@ footer div{
     .links{
         position: absolute;
         left: 0;
-        height: 70vh;
+        height: 75vh;
         z-index: 3;
         background-color: var(--transperent-background);
         top: var(--header-height);
