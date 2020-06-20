@@ -1,228 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Ubuntu&family=Oxygen&display=swap');
-@import url('./shared/index.css');
-@import url('./shared/infoTable.css');
-@import url('./shared/audit.css');
-@import url('./shared/manage.css');
-@import url('./login/style.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Ubuntu&family=Oxygen&display=swap");
+@import url("./shared/index.css");
+@import url("./shared/infoTable.css");
+@import url("./shared/audit.css");
+@import url("./shared/manage.css");
+@import url("./login/style.css");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body{
-    font-size: 62.5%;
-    height: 100%;
-    --header-background-color: rgb(47, 45, 45);
-    --header-font: 'Poppins', sans-serif;
-    --header-height: 6rem;
-    --header-title-color: 246, 69, 105;
-    --header-color: rgb(227, 233, 245);
-    --transperent-background: rgba(47, 45, 45, 0.966);
-    --input-focus-color: rgb(225, 231, 241);
-    --text-font: 'Raleway', sans-serif;
-    --font-size: 1.7rem;
-    --error-font: 'Oxygen', sans-serif;
-    
-
+body {
+  font-size: 62.5%;
+  height: 100%;
+  --header-background-color: rgb(47, 45, 45);
+  --header-font: "Poppins", sans-serif;
+  --header-height: 6rem;
+  --header-title-color: 246, 69, 105;
+  --header-color: rgb(227, 233, 245);
+  --transperent-background: rgba(47, 45, 45, 0.966);
+  --input-focus-color: rgb(225, 231, 241);
+  --text-font: "Raleway", sans-serif;
+  --font-size: 1.7rem;
+  --error-font: "Oxygen", sans-serif;
 }
 
-header nav{
-    position: fixed;
-    top: 0%;
-    z-index: 2;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--header-background-color);
-    width: 100%;
-    height: var(--header-height);
-    align-items: center;
+header nav {
+  position: fixed;
+  top: 0%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--header-background-color);
+  width: 100%;
+  height: var(--header-height);
+  align-items: center;
 }
 
-
-
-.error{
-    position: absolute;
-    z-index: 1;
-    top: 25%;
-    left: 55%;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    font-weight: bolder;
-    font-size: var(--font-size);
-    color: rgb(var(--header-title-color));
-    font-family: var(--error-font);
+.error {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 55%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: var(--font-size);
+  color: rgb(var(--header-title-color));
+  font-family: var(--error-font);
 }
 
-nav ul{
-    display: flex;
-    width: 40rem;
-    justify-content: space-around;
-    list-style: none;
+nav ul {
+  display: flex;
+  width: 40rem;
+  justify-content: space-around;
+  list-style: none;
 }
 
 header nav .nav-header {
-    font-family: var(--header-font);
-    font-size: 2rem;
-    color: rgb(var(--header-title-color));
-    letter-spacing: 0.3rem;
+  font-family: var(--header-font);
+  font-size: 2rem;
+  color: rgb(var(--header-title-color));
+  letter-spacing: 0.3rem;
 }
 
-nav ul li a{
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: var(--header-color);
-    font-family: var(--header-font);
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--header-color);
+  font-family: var(--header-font);
 }
 
-nav ul li a:hover{
- color: white;
+nav ul li a:hover {
+  color: white;
 }
 
-.burger{
-    position: relative;
-    display: none;
-    transition: all 0.7s ease-in-out;
-    cursor: pointer;
+.burger {
+  position: relative;
+  display: none;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
 }
 
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: var(--header-color);
-    margin: 4px;
-    border-radius: 30px;
-    transition: all 0.7s ease-in-out;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--header-color);
+  margin: 4px;
+  border-radius: 30px;
+  transition: all 0.7s ease-in-out;
 }
 
-footer{
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+footer div {
+  position: relative;
+  margin-top: 10rem;
+  background-color: var(--header-background-color);
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--header-color);
+  font-size: 1.5rem;
+  font-family: var(--header-font);
+  transform: translateY(190%);
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .links {
     position: absolute;
-    width: 100%;
-
-}
-
-footer div{
-    position: relative;
-    margin-top: 10rem;
-    background-color: var(--header-background-color);
-    height: 8rem;
-    display: flex;
-    justify-content: center;
+    left: 0;
+    height: 75vh;
+    z-index: 3;
+    background-color: var(--transperent-background);
+    top: var(--header-height);
+    flex-direction: column;
     align-items: center;
-    color: var(--header-color);
-    font-size: 1.5rem;
-    font-family: var(--header-font);
-    transform: translateY(190%);
+    width: 260px;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-in;
+  }
+
+  .links a {
+    font-size: 1.8rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .error {
+    left: 25%;
+  }
+
+  header nav .nav-header {
+    margin-right: 12rem;
+  }
+
+  footer div {
+    transform: translateY(450%);
+  }
+
+  .error {
+    top: 24%;
+    left: 55%;
+  }
 }
 
-@media screen and (max-width: 700px){
-    body{
-        overflow-x: hidden;
-    }
-    .links{
-        position: absolute;
-        left: 0;
-        height: 75vh;
-        z-index: 3;
-        background-color: var(--transperent-background);
-        top: var(--header-height);
-        flex-direction: column;
-        align-items: center;
-        width: 260px;
-        transform: translateX(-100%);
-        transition: transform 0.7s ease-in;
-    }
-    
-    .links a{
-        font-size: 1.8rem;
-    }
-
-    .burger{
-        display: block;
-    }
-
-    .error{
-        left: 25%;
-    }
-
-    header nav .nav-header{
-        margin-right: 12rem;
-    }
-
-    /* footer div{
-        transform: translateX();
-    }  */
-
-    .error{
-        top: 24%;
-        left: 55%;
-    }
+@media screen and (min-height: 1024px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-
-@media screen and (min-height: 1024px){
-    footer{
-        position: absolute;
-        bottom: 0;
-    }
+@media screen and (max-width: 450px) {
+  footer {
+    width: 100%;
+    transform: translateY(50%);
+  }
 }
 
-@media screen and (max-width: 450px){
-    footer{
-        width: 100%;
-        transform: translateY(50%);
-    }
+@media screen and (max-width: 370px) {
+  header nav .nav-header {
+    margin-left: 2rem;
+  }
+
+  .burger {
+    margin-left: 2rem;
+  }
+
+  .error {
+    top: 24%;
+    left: 55%;
+  }
+
+  footer {
+    transform: translateY(-50%);
+  }
 }
 
-@media screen and (max-width: 370px){
-
-    header nav .nav-header{
-        margin-left: 2rem;
-    }
-
-    .burger {
-        margin-left: 2rem;
-    }
-
-    .error{
-        top: 24%;
-        left: 55%;
-    }
-
-    footer {
-        transform: translateY(-50%);
-    }
-
-
+@media screen and (min-height: 900px) {
+  .error {
+    top: 24%;
+    left: 55%;
+  }
 }
-
-@media screen and (min-height: 900px){
-    .error{
-        top: 24%;
-        left: 55%;
-    }
-}
-
 
 .nav-active {
-    transform: translateX(0%);
-  }
-  
-.burger-active {
-    transform: translateY(5px);
+  transform: translateX(0%);
 }
 
-.burger .line1_active{
-    transform: rotate(45deg);
-    background-color: rgb(var(--header-title-color));
+.burger-active {
+  transform: translateY(5px);
 }
-.burger .line3_active{
-    transform: translateY(-14px) rotate(-45deg);
-    background-color: rgb(var(--header-title-color));
+
+.burger .line1_active {
+  transform: rotate(45deg);
+  background-color: rgb(var(--header-title-color));
 }
-.burger .line2_active{
-    opacity: 0;
+.burger .line3_active {
+  transform: translateY(-14px) rotate(-45deg);
+  background-color: rgb(var(--header-title-color));
+}
+.burger .line2_active {
+  opacity: 0;
 }
